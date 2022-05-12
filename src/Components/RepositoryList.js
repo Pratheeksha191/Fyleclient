@@ -16,7 +16,7 @@ const RepositoryList = ({repourl}) => {
   useEffect(() => {
     async function getrepos(){
       if(currentrepos > 1)setLoading(true)
-      const res = await axios.get(`http://localhost:4000/repos?url=${repourl}&page=${currentrepos}`);
+      const res = await axios.get(`https://fyleserver.herokuapp.com/repos?url=${repourl}&page=${currentrepos}`);
       setRepos(res.data.results);
       setReposcount(res.data.total)
       repos && setLoading(false)

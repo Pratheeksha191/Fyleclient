@@ -45,7 +45,7 @@ function Homepage() {
     },3000)
   },[])
 
-
+  console.log(details);
   
  
   if(loading){
