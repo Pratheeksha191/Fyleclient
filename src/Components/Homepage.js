@@ -21,8 +21,14 @@ function Homepage() {
         var config = {
           method: 'get',
           url: `https://api.github.com/users/${username}`,
-          headers: { 
-            'Authorization': 'Bearer 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'
+          // headers: { 
+          //   'Authorization': 'Bearer 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'
+          // }
+          headers: {'content-type': 'application/x-www-form-urlencoded'},
+          data: {
+            grant_type: 'client_credentials',
+            client_id: '5a84e76decc85b7097dc',
+            client_secret: 'ea0219e404546fa7347cc38ec5a6b19d6f02b863',
           }
         };
         const res = await axios(config).then(function (response) {
