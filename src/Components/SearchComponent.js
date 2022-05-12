@@ -14,8 +14,8 @@ function SearchComponent() {
 
   return (
     <form onSubmit={handlesubmit} className="container d-flex flex-column w-50 justify-content-center align-items-center searchcomp">
-        <input type="text" className='form-outline px-2 py-2 mb-3 w-50' placeholder='Enter username' value={username} onChange={(e) => {setUsername(e.target.value)}}/>
-        <button type="submit" className='btn btn-primary w-25'>Search</button>
+        <input type="text" className='form-outline px-2 py-2 mb-3' placeholder='Enter username' value={username} onChange={(e) => {setUsername(e.target.value)}}/>
+        <button type="submit" className='btn btn-primary'>Search</button>
     </form>
   )
 }

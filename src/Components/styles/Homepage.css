@@ -30,11 +30,12 @@
     flex-direction: row;
     gap: 8px;
     cursor: pointer;
+    padding: 20px;
 }
 
 
 @media all and (max-width:800px){
     .homepage_userdetails{
-        height: 70vh;
+        height: 80vh;
     }
 }

@@ -60,7 +60,7 @@ function Homepage() {
         <div className='homepage_userdetails'>
             {details && <UserDetailsComponent details={details} username={username}/>}
         </div>
-        <div className='px-5 py-2 links'>
+        <div className='links'>
           <IoLink/>
           <p className='lnk' >{link}</p>
         </div>
