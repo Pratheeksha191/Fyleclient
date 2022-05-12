@@ -22,7 +22,7 @@ function Homepage() {
           method: 'get',
           url: `https://api.github.com/users/${username}`,
           headers: { 
-            'Authorization': 'Bearer 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'
+            'Authorization': 'Bearer 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'
           }
         };
         const res = await axios(config).then(function (response) {
